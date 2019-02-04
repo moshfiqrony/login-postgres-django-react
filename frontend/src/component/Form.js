@@ -1,7 +1,6 @@
 import React from 'react'
 import axios from 'axios'
 
-
 class Form extends React.Component{
     constructor(){
         super()
@@ -24,7 +23,6 @@ class Form extends React.Component{
     }
 
     handleSubmit(e){
-        e.preventDefault()
         console.log(this.state)
         const username = e.target.elements.username.value
         const password = e.target.elements.password.value
