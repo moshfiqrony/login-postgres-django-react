@@ -29,7 +29,7 @@ class Form extends React.Component{
         const username = e.target.elements.username.value
         const password = e.target.elements.password.value
         const email = e.target.elements.email.value
-        axios.post('http://127.0.0.1:8000/getbyuser/',
+        axios.post('http://127.0.0.1:8000/getbyid/',
             {
                 username: username,
                 password: password,
