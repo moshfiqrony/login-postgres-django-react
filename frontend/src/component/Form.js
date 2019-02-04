@@ -40,7 +40,7 @@ class Form extends React.Component{
 
     render() {
         return(
-            <div>
+            <div style={{width: 600, margin:'0 auto', marginTop: 50}}>
                 <form onSubmit={this.handleSubmit}>
                     <input
                         type='text'

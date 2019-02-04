@@ -25,11 +25,12 @@ class Users extends React.Component{
 
     render() {
         return(
-            <div>
+            <div style={{marginTop: 50}}>
                 
                 <div>
                 <table id="t01">
                     <tr>
+                        <th>ID</th>
                         <th>Username</th>
                         <th>Email</th>
                         <th>Password</th> 
@@ -37,6 +38,7 @@ class Users extends React.Component{
 
                     {this.state.users.map((user) => {
                         return(<tr>
+                            <td>{user.id}</td>
                             <td>{user.username}</td>
                             <td>{user.email}</td>
                             <td>{user.password}</td>
